@@ -23,7 +23,7 @@
 ## 使用步骤
 
 - 下载Chrome浏览器（如果有360、火狐等应该不用下载）
-  - [官网（有时无法连接）](https://www.google.cn/chrome/browser/desktop/index.html)
+  - [官网（有时无法连接）](https://google.cn/chrome/browser/desktop/index.html)
   - [百度（推荐普通下载）](http://rj.baidu.com/soft/detail/14744.html?ald)
 - 使用 **Chrome浏览器** 打开智慧树网课播放页
 - 按下 Ctrl+Shift+I 打开开发者工具（F12应该也可以，如下图）
