@@ -60,7 +60,7 @@ function start(){
     // 1.5倍速
     $(".speedTab15").click();
     // 下一节课
-    if($("div.bigPlayButton").attr("style") != "display: none;"){
+    if($("div.bigPlayButton").attr("style") != "display: none;" && $(".popboxes_close.tmui_txt_hidd").length === 0 ){
       $("#nextBtn").click();
     }
     // 结束判断
@@ -72,8 +72,6 @@ function start(){
 function closeQ(){
   clearInterval(_it);
   setInterval(function(){
-    console.log("===============================");
     $(".popboxes_close.tmui_txt_hidd").click();
-  },5000);
-}
-```
+  },1000);
+}```
