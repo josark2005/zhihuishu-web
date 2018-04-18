@@ -67,9 +67,8 @@ function start(){
   },5000);
 }
 function closeQ(){
-  clearInterval(_it);
   setInterval(function(){
     $(".popboxes_close.tmui_txt_hidd").click();
-  },1000);
+  },500);
 }
 ```
