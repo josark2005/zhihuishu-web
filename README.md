@@ -30,6 +30,7 @@
 console.log("成功运行自动刷网课智慧树版");
 var _it = null;
 start();
+closeQ();
 function closeQuestion(){
   clearInterval(_it);
   var t = $(".popboxes_close.tmui_txt_hidd");
@@ -63,10 +64,6 @@ function start(){
     if($("div.bigPlayButton").attr("style") != "display: none;" && $(".popboxes_close.tmui_txt_hidd").length === 0 ){
       $("#nextBtn").click();
     }
-    // 结束判断
-    if($("div.next_lesson_bg.tm_next_lesson").attr("style") == "display: none;"){
-      closeQ(); // 仅自动关闭题库
-    }
   },5000);
 }
 function closeQ(){
@@ -74,4 +71,5 @@ function closeQ(){
   setInterval(function(){
     $(".popboxes_close.tmui_txt_hidd").click();
   },1000);
-}```
+}
+```
