@@ -7,5 +7,7 @@
 // +----------------------------------------------------------------------
 // 代码用于智慧树静音修复
 setInterval(function(){
-  $(".volumeIcon").click();
+  if(!$(".volumeBox").hasClass("volumeNone")){
+    $(".volumeIcon").click();
+  }
 },100);
