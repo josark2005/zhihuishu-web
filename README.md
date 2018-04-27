@@ -107,9 +107,10 @@ setInterval(function(){
 
 - 修复`静音修复`代码出现鬼畜的情况
 - 增加`弹题修复`
-  - `弹题修复`代码主要针对极小概率的关闭弹题失败的原因
+  - `弹题修复`代码主要针对极小概率的关闭弹题失败的问题
 
 ---
 
-Powered by Jokin
+Powered by Jokin.
+
 All rights reserved.
