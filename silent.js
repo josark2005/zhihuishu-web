@@ -6,6 +6,7 @@
 // | Author: Jokin <Jokin@twocola.com>
 // +----------------------------------------------------------------------
 // 代码用于智慧树静音修复
+console.log("静音修复代码成功启动");
 setInterval(function(){
   if(!$(".volumeBox").hasClass("volumeNone")){
     $(".volumeIcon").click();
