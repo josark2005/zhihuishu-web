@@ -32,7 +32,7 @@
   - [官网（有时无法连接）](https://google.cn/chrome/browser/desktop/index.html)
   - [百度（推荐普通下载）](http://rj.baidu.com/soft/detail/14744.html?ald)
 - 使用 **Chrome浏览器** 打开智慧树网课播放页
-- 按下 Ctrl+Shift+I 打开开发者工具（F12应该也可以，如下图）
+- 按下 Ctrl+Shift+I 打开开发者工具（F12应该也可以，如下图），点击`Console选项卡`或者按下`ESC`调整到如下图所示状态。
   - ![开发者面板](./images/d1.png)
 - 复制 **`zhihuishu.txt` 文件中的代码（推荐）** 或下方代码
 - 在 **开发者工具** 中点击下方的 **Console** 选项卡
