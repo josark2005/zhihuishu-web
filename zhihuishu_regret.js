@@ -18,7 +18,6 @@ function closeQuestion(){
   if( $(".popboxes_close.tmui_txt_hidd").length != 0 ){
     closeQuestion();
   }else{
-    start();
     interval();
   }
 }

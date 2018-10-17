@@ -1,11 +1,4 @@
 ```
-// +----------------------------------------------------------------------
-// | Constructed by Jokin [ Think & Do & To Be Better ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016-2018 Jokin All rights reserved.
-// +----------------------------------------------------------------------
-// | Author: Jokin <Jokin@twocola.com>
-// +----------------------------------------------------------------------
 console.log("成功运行自动刷网课智慧树版");
 var _it = null;
 start();
@@ -19,7 +12,6 @@ function closeQuestion(){
   if( $(".popboxes_close.tmui_txt_hidd").length != 0 ){
     closeQuestion();
   }else{
-    start();
     interval();
   }
 }
@@ -54,5 +46,4 @@ function closeQ(){
     $(".popboxes_close.tmui_txt_hidd").click();
   },500);
 }
-
 ```
