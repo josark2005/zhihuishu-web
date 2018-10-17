@@ -1,6 +1,6 @@
 # 智慧树刷课与题集
 
-[题库与答案](https://jokin1999.github.io/zhihuishu-web/)
+本项目由[`悟冗博客`](https://wr.twocola.com)支持
 
 **本项目开源免费归档前长期维护，请勿用于任何商业用途，否则后果自负！**
 
@@ -78,8 +78,8 @@ function start(){
     // 1.5倍速
     $(".speedTab15").click();
     // 下一节课
-    if($("div.bigPlayButton").attr("style") != "display: none;" && $(".popboxes_close.tmui_txt_hidd").length === 0 ){
-      $("#nextBtn").click();
+    if(ablePlayerX("mediaplayer").getDuration() === ablePlayerX("mediaplayer").getPosition()){
+      setTimeout(function(){ $("#nextBtn").click(); }, 1000); // 延迟跳转
     }
   },5000);
 }
@@ -88,6 +88,7 @@ function closeQ(){
     $(".popboxes_close.tmui_txt_hidd").click();
   },500);
 }
+
 ```
 
 ## 静音修复代码
@@ -105,9 +106,8 @@ setInterval(function(){
 
 ## 更新日志
 
-- 修复`静音修复`代码出现鬼畜的情况
-- 增加`弹题修复`
-  - `弹题修复`代码主要针对极小概率的关闭弹题失败的问题
+- 新增`后悔版`
+- 优化部分判断方式
 
 ---
 

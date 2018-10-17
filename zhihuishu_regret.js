@@ -19,28 +19,32 @@ function closeQuestion(){
     closeQuestion();
   }else{
     start();
+    interval();
   }
 }
 function start(){
+  ablePlayerX("mediaplayer").play();
+  // 修复
+  var len = ablePlayerX("mediaplayer").getDuration();
+  var now = ablePlayerX("mediaplayer").getPosition();
+  console.log("视频总长度："+len);
+  console.log("视频现进度："+now);
+  // 清空进度条
+  ablePlayerX("mediaplayer").seek(0);
+  console.log("【提示】刷课程序运行中");
+  // 下一节课
+  console.log("【提示】"+(len+5)+"秒后自动下一节");
+  setTimeout(function(){ $("#nextBtn").click();start(); }, (len+5)*1000); // 延迟跳转
+}
+
+function interval() {
   _it = setInterval(function(){
-    console.log("【提示】刷课程序运行中");
     // 关闭弹题
     closeQuestion()
-    // 判断清晰度调整为高清
-    if(!$(".line1bq").hasClass("active")){
-      $(".line1bq").click();
-      console.log("【提示】刷课程序已将清晰度调整为“标清”");
-    }
     // 自动静音
     if(!$(".volumeBox").hasClass("volumeNone")){
       $(".volumeIcon").click();
       console.log("【提示】刷课程序已将视频静音");
-    }
-    // 1.5倍速
-    $(".speedTab15").click();
-    // 下一节课
-    if(ablePlayerX("mediaplayer").getDuration() === ablePlayerX("mediaplayer").getPosition()){
-      setTimeout(function(){ $("#nextBtn").click(); }, 1000); // 延迟跳转
     }
   },5000);
 }
