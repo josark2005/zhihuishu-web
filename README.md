@@ -47,7 +47,7 @@
 console.log("成功运行自动刷网课智慧树版");
 var _it = null;
 start();
-closeQ();
+closeQuestion();
 function closeQuestion(){
   clearInterval(_it);
   var t = $(".popboxes_close.tmui_txt_hidd");
@@ -88,7 +88,6 @@ function closeQ(){
     $(".popboxes_close.tmui_txt_hidd").click();
   },500);
 }
-
 ```
 
 ## 静音修复代码
