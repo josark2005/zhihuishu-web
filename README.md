@@ -48,6 +48,10 @@
 console.log("成功运行自动刷网课智慧树版");
 var _it = null;
 start();
+// 弹题修复
+setInterval(function(){
+  $(".popboxes_close.tmui_txt_hidd").click();
+},500);
 closeQuestion();
 function closeQuestion(){
   clearInterval(_it);
@@ -86,14 +90,11 @@ function start(){
     }
   },5000);
 }
-
 ```
 
 ## 更新日志
 
-- 优化代码
-- 整合`静音修复`
-- `后悔版`下架
+- 弹题修复
 
 ---
 
