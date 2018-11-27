@@ -38,12 +38,12 @@ function start(){
     // 关闭弹题
     closeQuestion()
     // 判断清晰度调整为高清
-    if(!$(".line1bq").hasClass("active")){
-      $(".line1bq").click();
-      console.log("【提示】刷课程序已将清晰度调整为“标清”");
-    }
+    // if(!$(".line1bq").hasClass("active")){
+    //   $(".line1bq").click();
+    //   console.log("【提示】刷课程序已将清晰度调整为“标清”");
+    // }
     // 1.5倍速
-    $(".speedTab15").click();
+    // $(".speedTab15").click();
     // 下一节课
     if($("div.bigPlayButton").attr("style") != "display: none;" && $(".popboxes_close.tmui_txt_hidd").length === 0 ){
       $("#nextBtn").click();
